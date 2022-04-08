@@ -1,0 +1,199 @@
+//problem1
+//for expression abc*
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+          cout<<"Enter expression : ";
+          string in;
+          cin>>in;
+          cout<<endl;
+          int i = 0;
+
+          if(in[0]=='a' && in[1]=='b'){
+                    for( i =2; i<in.length(); i++){
+                              if(in[i]=='c'){
+                                        continue;
+                              }
+                              else if(in[i]==' '){
+                                        continue;
+                              }
+                              else{break;}
+                    }
+          }
+
+          if(i==in.length()){
+                    cout<<"Valid Expression"<<endl;
+          }
+          else{cout<<"Invalid Expresson"<<endl;}
+
+          return 0;
+}
+
+
+
+//problem2
+//for expression abc+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+          cout<<"Enter expression : ";
+          string in;
+          cin>>in;
+          cout<<endl;
+          int i = 0;
+
+          if(in[0]=='a' && in[1]=='b' && in[2]=='c'){
+                    for( i =3; i<in.length(); i++){
+                              if(in[i]=='c'){
+                                        continue;
+                              }
+                              else if(in[i]==' '){
+                                        continue;
+                              }
+                              else{break;}
+                    }
+          }
+
+          if(i==in.length()){
+                    cout<<"Valid Expression"<<endl;
+          }
+          else{cout<<"Invalid Expresson"<<endl;}
+
+          return 0;
+}
+
+
+
+//problem3
+//for expression [a-z]
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+          cout<<"Enter expression : ";
+          string in;
+          cin>>in;
+          cout<<endl;
+          int i = 0;
+
+
+                    for( i =0; i<in.length(); i++){
+                              if(in[i]>='a' && in[i]<='z'){
+                                        continue;
+                              }
+
+                              else{break;}
+                    }
+
+
+          if(i==in.length()){
+                    cout<<"Valid Expression"<<endl;
+          }
+          else{cout<<"Invalid Expresson"<<endl;}
+
+          return 0;
+}
+
+
+
+
+//problem4
+//for expression [A-Za-z0-9]
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+          cout<<"Enter expression : ";
+          string in;
+          cin>>in;
+          cout<<endl;
+          int i = 0;
+
+
+                    for( i =0; i<in.length(); i++){
+                              if((in[i]>='a' && in[i]<='z')  || ( in[i]>='A' && in[i]<='Z')  || ( in[i]>='0' && in[i]<='9') ){
+                                        continue;
+                              }
+
+                              else{break;}
+                    }
+
+
+          if(i==in.length()){
+                    cout<<"Valid Expression"<<endl;
+          }
+          else{cout<<"Invalid Expresson"<<endl;}
+
+          return 0;
+}
+
+
+
+
+
+//problem5
+//for expression [^ab]
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+          cout<<"Enter expression : ";
+          string in;
+          cin>>in;
+          cout<<endl;
+          int i = 0;
+
+
+                    for( i =0; i<in.length(); i++){
+                              if( in[i]=='a' || in[i]=='b' ){
+                                        break;
+                              }
+
+                              else{continue;}
+                    }
+
+
+          if(i==in.length()){
+                    cout<<"Valid Expression"<<endl;
+          }
+          else{cout<<"Invalid Expresson"<<endl;}
+
+          return 0;
+}
+
+
+
+
+
+
+//problem6
+//for expression a|b
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+          cout<<"Enter expression : ";
+          string in;
+          cin>>in;
+          cout<<endl;
+
+          if(in.length()>0){cout<<"Invalid Expresson"<<endl;}
+          else if(in[0]=='a' || in[0]=='b'){
+                    cout<<"Valid Expression"<<endl;
+          }
+          else{cout<<"Invalid Expresson"<<endl;}
+
+          return 0;
+}
+
+
+
+
